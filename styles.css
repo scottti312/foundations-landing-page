@@ -7,16 +7,38 @@ body {
 .header {
   height: 40px;
   display: flex;
-  padding: 6px 60px 6px 60px;
+  padding: 10px 60px 10px 60px;
   justify-content: space-between;
   background-color: #1F2937;
   align-items: center;
 }
 
 .logo {
-  font-size: 30px;
-  color: #F9FAF8;
+  font-size: 36px;
   font-weight: 900;
+  color: white;
+  text-decoration: none;
+}
+
+/* Rainbow snippet taken from https://stackoverflow.com/questions/54702124/rainbow-text-animation-using-only-css */
+
+.rainbow_text_animated:hover {
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
 }
 
 .hero {
@@ -163,10 +185,6 @@ ul {
   gap: 25px;
   padding: 0px;
   text-decoration: none;
-}
-
-a.logo:hover {
-  text-decoration: underline;
 }
 
 li a {
