@@ -116,7 +116,6 @@ body {
   display: flex;
   padding: 100px 200px 100px 200px;
   justify-content: center;
-  
 }
 
 .blue-box {
@@ -124,6 +123,7 @@ body {
   padding: 50px 100px 50px 100px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 90px;
   border-radius: 8px;
 }
@@ -137,21 +137,20 @@ body {
   font-size: 24px;
 }
 
-.fourth-card-signup:hover {
+a .fourth-card-signup:hover {
+  text-decoration: none;
   background-color: white;
   color: black;
 }
 
-.fourth-card-signup {
-  display: flex;
+a .fourth-card-signup {
+  text-decoration: none;
   background-color: #3882F6;
   border-radius: 8px;
   color: white;
   border: white solid 1px;
-  height: 30px;
-  padding: 5px 40px 5px 40px;
-  justify-content: center;
-  align-self: center;
+  width: 100px;
+  padding: 6px 12px 6px 12px;
   font-weight: 600;
   outline: none;
   transition-duration: 0.4s;
