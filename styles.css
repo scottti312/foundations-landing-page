@@ -219,8 +219,7 @@ p {
 
 .footer {
   color: white;
-  display: flex;
-  justify-content: center;
   padding: 32px;
   background-color: #1F2937;
+  text-align: center;
 }
